@@ -1,17 +1,17 @@
 import * as React from 'react';
-import './TetrisGrid.css';
-import BlockShape from '../BlockShape/BlockShape';
+import './BackgroundStage.css';
+import Shape from '../Shape/Shape';
 
-interface ITetrisGridProps {
+interface IBackgroundStageProps {
 
 }
 
-interface ITetrisGridState {
+interface IBackgroundStageState {
   isPlaying: boolean;
 }
-class TetrisGrid extends React.Component<ITetrisGridProps, ITetrisGridState> {
+class BackgroundStage extends React.Component<IBackgroundStageProps, IBackgroundStageState> {
 
-  constructor(props: ITetrisGridProps, state: ITetrisGridState) {
+  constructor(props: IBackgroundStageProps, state: IBackgroundStageState) {
     super(props, state);
 
     this.state = {
@@ -30,7 +30,7 @@ class TetrisGrid extends React.Component<ITetrisGridProps, ITetrisGridState> {
 
     for (let i = 0; i < 7; i++)
 		{
-      let shape = <BlockShape key={`shape-${i}`} top={Y[i]} left={X[i]} 
+      let shape = <Shape key={`shape-${i}`} top={Y[i]} left={X[i]} 
             angle={ANGLE[i]} type={TYPE[i]} icon={ICONID}
             color={i} />;
       shapes.push(shape);
@@ -48,4 +48,4 @@ class TetrisGrid extends React.Component<ITetrisGridProps, ITetrisGridState> {
   }
 }
 
-export default TetrisGrid;
+export default BackgroundStage;

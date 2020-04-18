@@ -1,9 +1,9 @@
 import * as React  from 'react';
 import                 './App.css';
 
-import LeftFrame from './components/LeftFrame/LeftFrame';
+import PlayBoard from './components/PlayBoard/PlayBoard';
 import NextShape from './components/NextShape/NextShape';
-import PowerButton from './components/function-components/PowerButton/PowerButton';
+import PowerButton from './components/PowerButton/PowerButton';
 
 interface IAppProps {
 
@@ -28,7 +28,7 @@ class App extends React.Component<IAppProps, IAppState> {
     return (
       <div className="App">
         <div className="mainFrame">
-          <LeftFrame />
+          <PlayBoard />
 
           <div className="rightfrm">
             <div id="nextBlock">

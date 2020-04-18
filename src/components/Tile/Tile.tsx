@@ -1,8 +1,8 @@
 import * as React from 'react';
-import './BlockUnit.css';
+import './Tile.css';
 import { $core } from '../../common/Core';
 
-interface IBlockUnitOptions {
+interface ITileOptions {
   top: number;
   left: number;
   width: number;
@@ -10,14 +10,14 @@ interface IBlockUnitOptions {
   color: number;
 }
 
-interface IBlockUnitProps extends IBlockUnitOptions { }
-interface IBlockUnitState extends IBlockUnitOptions { 
+interface ITileProps extends ITileOptions { }
+interface ITileState extends ITileOptions { 
 
 }
 
-class BlockUnit extends React.Component<IBlockUnitProps, IBlockUnitState> {
+class Tile extends React.Component<ITileProps, ITileState> {
 
-  constructor(props: IBlockUnitProps, state: IBlockUnitState) {
+  constructor(props: ITileProps, state: ITileState) {
     super(props, state);
 
     this.state = this.props;
@@ -39,7 +39,6 @@ class BlockUnit extends React.Component<IBlockUnitProps, IBlockUnitState> {
     var y = Math.floor(this.state.top/this.state.width);
     var cellVal = this.state.color;
     
-    //debugInfo("Block(left=" + this.left + "|top=" + this.top+ " occupies " + x + "," + y);
     $core.Cells[y][x] = cellVal;
   }
 
@@ -50,4 +49,4 @@ class BlockUnit extends React.Component<IBlockUnitProps, IBlockUnitState> {
   }
 }
 
-export default BlockUnit;
+export default Tile;

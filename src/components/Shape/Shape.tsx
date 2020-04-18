@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { $core } from '../../common/Core';
-import BlockUnit from '../BlockUnit/BlockUnit';
-import './BlockShape.css';
+import Tile from '../Tile/Tile';
+import './Shape.css';
 
 interface IBlockShapeOptions {
   left?: number;
@@ -13,12 +13,12 @@ interface IBlockShapeOptions {
   width?: number;
   blocks?: [];
 }
-interface IBlockShapeProps extends IBlockShapeOptions { }
-interface IBlockShapeState extends IBlockShapeOptions { }
+interface IShapeProps extends IBlockShapeOptions { }
+interface IShapeState extends IBlockShapeOptions { }
 
-class BlockShape extends React.Component<IBlockShapeProps, IBlockShapeState> {
+class Shape extends React.Component<IShapeProps, IShapeState> {
   readonly blockWidth = 28;
-  constructor(props: IBlockShapeProps, state: IBlockShapeState) {
+  constructor(props: IShapeProps, state: IShapeState) {
     super(props, state)
 
     this.state = {
@@ -52,7 +52,7 @@ class BlockShape extends React.Component<IBlockShapeProps, IBlockShapeState> {
 				let blockTop: number = (this.state.top as number) + j * this.blockWidth;
 				if (unitArray[i].substr(j,1) == "1")
 				{
-          blocks.push(<BlockUnit key={`${i}-${j}`} 
+          blocks.push(<Tile key={`${i}-${j}`} 
                 top={blockTop} left={blockLeft} 
                 width={this.blockWidth} 
                 icon={this.state.icon as number}
@@ -70,4 +70,4 @@ class BlockShape extends React.Component<IBlockShapeProps, IBlockShapeState> {
   }
 }
 
-export default BlockShape;
+export default Shape;

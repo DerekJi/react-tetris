@@ -35,9 +35,6 @@ class Core {
     ];   
 
     public static hex2binstr(hexNum: string, strLen: number) {
-        /*
-            数字0转成字母O，以确保传回的是字符串，而不是整容后的长度不够的二进制数。但看上去又比较像二进制数据。
-        */
         const replaceChar = "O";
         const binNum = parseInt(hexNum, 16).toString(2).replace(/0/ig, replaceChar); 
         let binstr = binNum;

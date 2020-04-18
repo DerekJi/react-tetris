@@ -1,8 +1,8 @@
 import * as React from 'react';
-import './TetrisStage.css';
+import './ActiveStage.css';
 
 
-class TetrisStage extends React.Component {
+class ActiveStage extends React.Component {
 
   public renderSamples() {
 
@@ -14,4 +14,4 @@ class TetrisStage extends React.Component {
   }
 }
 
-export default TetrisStage;
+export default ActiveStage;

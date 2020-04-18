@@ -1,13 +1,13 @@
 import * as React from 'react';
 import './GameOver.css';
 
+interface IGameOverProps {
+}
 
-class GameOver extends React.Component {
-  public render() {
-    return (
-      <div className="GameOver" />
-    );
-  }
+function GameOver(props: IGameOverProps) {
+  return (
+    <div className="GameOver" />
+  );
 }
 
 export default GameOver;

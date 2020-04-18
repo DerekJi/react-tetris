@@ -1,10 +1,10 @@
 import * as React from 'react';
 import './NextShape.css';
-import BlockShape from '../BlockShape/BlockShape';
+import Shape from '../Shape/Shape';
 import { $core } from '../../common/Core';
 
 
-class NextShape extends BlockShape {
+class NextShape extends Shape {
   readonly offsetsX = [
 		[24+28, 10, 24+28, 10],	// Bar: (H, V, H, V)
 		[10+28, 28, 10+28, 28],   // Z: (H, V, H, V)
@@ -23,8 +23,7 @@ class NextShape extends BlockShape {
 		[28, 10+28, 28, 10+28],   // L: (90, 180, 270, 0) -- clockwise rotation 
 		[28, 10+28, 28, 10+28],   // J: (90, 180, 270, 0) -- clockwise rotation 
 		[10, 10, 10, 10],    // □ 
-  ];
-  
+	];
 
   public render() {
     let colorId = Math.floor(7 * Math.random()); // colorId决定X坐标
@@ -36,7 +35,7 @@ class NextShape extends BlockShape {
     let offsetY = this.offsetsY[shapeId][angleId];		// unitTop
   
     return (
-      <BlockShape icon={$core.DefaultIconId} color={colorId}
+      <Shape icon={$core.DefaultIconId} color={colorId}
             type={shapeId} angle={angleId} 
             width={28} top={offsetY} left={offsetX}/>
     );
