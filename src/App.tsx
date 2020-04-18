@@ -2,7 +2,6 @@ import * as React  from 'react';
 import                 './App.css';
 
 import LeftFrame from './components/LeftFrame/LeftFrame';
-import logo        from './logo.svg';
 import NextShape from './components/NextShape/NextShape';
 import PowerButton from './components/PowerButton/PowerButton';
 
@@ -74,19 +73,10 @@ class App extends React.Component<IAppProps, IAppState> {
             
             <br />
             <div className="plaintxt">
-              <p>Tetris - Based on JavaScript<br /><br />
-              Author: <a href="mailto:syfool@hotmail.com">syfool</a></p>
+              <div>Author: <a href="mailto:syfool@hotmail.com">syfool</a></div>
             </div>
           </div>
         </div>
-
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">React Tetris</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
       </div>
     );
   }
