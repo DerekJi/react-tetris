@@ -3,7 +3,7 @@ import                 './App.css';
 
 import LeftFrame from './components/LeftFrame/LeftFrame';
 import NextShape from './components/NextShape/NextShape';
-import PowerButton from './components/PowerButton/PowerButton';
+import PowerButton from './components/function-components/PowerButton/PowerButton';
 
 interface IAppProps {
 
