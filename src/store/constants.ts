@@ -36,6 +36,12 @@ export type ROTATE_TYPE = typeof ROTATE;
 
 // status
 export const RUNNING = "RUNNIG";
+export type RUNNING_TYPE = typeof RUNNING;
 export const PAUSED = "PAUSED";
+export type PAUSED_TYPE = typeof PAUSED;
 export const STOPPED = "STOPPED";
+export type STOPPED_TYPE = typeof STOPPED;
 export const COMPLETE = "COMPLETE";
+export type COMPLETE_TYPE = typeof COMPLETE;
+
+export type GAMESTATUS = RUNNING_TYPE | PAUSED_TYPE | STOPPED_TYPE | COMPLETE_TYPE;
