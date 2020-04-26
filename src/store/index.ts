@@ -1,6 +1,7 @@
 import { combineReducers } from "redux";
-import scoreReducers from './score.reducers';
+import { createStore } from 'redux';
 
 export const rootReducer = combineReducers({
-  scoreReducers,
 });
+
+export const store = createStore(rootReducer);

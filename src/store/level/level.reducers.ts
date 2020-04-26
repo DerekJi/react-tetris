@@ -1,4 +1,4 @@
-import { LevelActions } from "../actions/level.actions";
+import { LevelActions } from "./level.actions";
 import { DECREMENT, INCREMENT, RESET } from "../constants"
 
 export default (state = 0, action: LevelActions): number => {

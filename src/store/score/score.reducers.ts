@@ -1,4 +1,4 @@
-import { ScoreActions } from "../actions/score.actions"
+import { ScoreActions } from "./score.actions"
 import { DECREMENT, INCREMENT, RESET } from "../constants"
 
 export default (state = 0, action: ScoreActions): number => {
