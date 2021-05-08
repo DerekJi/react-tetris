@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "acorn": "^7.1.1",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "immutable": "^4.0.0-rc.12",
     "kind-of": "^6.0.3",
     "lodash": "^4.17.19",
