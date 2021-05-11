@@ -7,7 +7,7 @@
     "handlebars": "^4.7.6",
     "immutable": "^4.0.0-rc.12",
     "kind-of": "^6.0.3",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "lodash.template": "^4.5.0",
     "mem": "^6.1.0",
     "minimist": "^1.2.3",
