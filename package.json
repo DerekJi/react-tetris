@@ -30,7 +30,7 @@
     "@types/react": "^16.4.12",
     "@types/react-dom": "^16.0.7",
     "@types/react-redux": "^7.1.7",
-    "node-sass": "^4.9.3",
+    "node-sass": "^7.0.0",
     "react-scripts-ts": "^2.17.0",
     "react-scripts-ts-scss": "^2.8.3",
     "redux-devtools": "^3.5.0",
